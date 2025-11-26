@@ -19,6 +19,24 @@
           <!-- Activities will be loaded here -->
           <p>Loading activities...</p>
         </div>
+
+        <!-- NEW: activity card template - restored original layout + participants list -->
+        <template id="activity-card-template">
+          <article class="activity-card" data-activity-id="">
+            <h4 class="activity-title"></h4>
+            <p class="activity-desc"></p>
+
+            <p class="activity-schedule"><strong>Schedule:</strong> <span class="schedule-text">—</span></p>
+            <p class="activity-availability"><strong>Availability:</strong> <span class="availability-text">—</span></p>
+
+            <div class="participants">
+              <h5>Participants</h5>
+              <ul class="participants-list">
+                <li class="no-participants">No participants yet</li>
+              </ul>
+            </div>
+          </article>
+        </template>
       </section>
 
       <section id="signup-container">
